@@ -35,7 +35,7 @@ const OrderDetailsPage = () => {
             <div className="flex flex-col items-start sm:items-end mt-4 sm:mt-0">
               <span
                 className={`${
-                  orderDetails.ispaid
+                  orderDetails.isPaid
                     ? "bg-green-100 text-green-700"
                     : "bg-red-200 text-red-700"
                 } px-3 py-1 rounded-full text-sm font-medium mb-2`}
@@ -46,7 +46,7 @@ const OrderDetailsPage = () => {
                 className={`${
                   orderDetails.isDelivered
                     ? "bg-green-100 text-green-700"
-                    : "bg-yellow-200 text-yellows-700"
+                    : "bg-yellow-200 text-yellow-700"
                 } px-3 py-1 rounded-full text-sm font-medium mb-2`}
               >
                 {orderDetails.isDelivered ? "Delivered" : "Pending Delivery"}
@@ -58,7 +58,7 @@ const OrderDetailsPage = () => {
             <div>
               <h4 className="text-lg font-semibold mb-2">Payment Info</h4>
               <p>Payment Method: {orderDetails.paymentMethod}</p>
-              <p>Status: {orderDetails.ispaid ? "Paid" : "Unpaid"}</p>
+              <p>Status: {orderDetails.isPaid ? "Paid" : "Unpaid"}</p>
             </div>
 
             <div>
@@ -98,7 +98,7 @@ const OrderDetailsPage = () => {
                         {item.name}
                       </Link>
                     </td>
-                    <td className="py-2 px-11">${item.price}</td>
+                    <td className="py-2 px-11">${item.price.toFixed(2)}</td>
                     <td className="py-2 px-11">{item.quantity}</td>
                     <td className="py-2 px-11">
                       ${item.price * item.quantity}

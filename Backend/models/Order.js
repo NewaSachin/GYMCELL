@@ -36,6 +36,10 @@ const orderSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
+    shippingMethod: {
+      type: String,
+      default: "Standard", // or leave it required if you want it always passed
+    },
     orderItems: [orderItemSchema],
     shippingAddress: {
       address: { type: String, required: true },

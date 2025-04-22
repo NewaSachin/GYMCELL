@@ -62,6 +62,7 @@ const Register = () => {
               onChange={(e) => setName(e.target.value)}
               className="w-full p-2 border rounded"
               placeholder="Enter Your Name"
+              pattern="[A-Za-z ]+"
             />
           </div>
           <div className="mb-4">

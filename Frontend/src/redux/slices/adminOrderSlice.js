@@ -73,6 +73,7 @@ const adminOrderSlice = createSlice({
     totalSales: 0,
     loading: false,
     error: null,
+    message: null,
   },
   reducers: {},
   extraReducers: (builder) => {

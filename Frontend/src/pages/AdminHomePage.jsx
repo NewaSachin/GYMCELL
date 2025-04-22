@@ -53,7 +53,7 @@ const AdminHomePage = () => {
               to="/admin/products"
               className="text-blue-500 hover:underline"
             >
-              Manage Product
+              Manage Products
             </Link>
           </div>
         </div>
@@ -72,7 +72,7 @@ const AdminHomePage = () => {
               </tr>
             </thead>
             <tbody>
-              {orders.length > 0 ? (
+              {Array.isArray(orders) && orders.length > 0 ? (
                 orders
                   .filter((order) => order.user && order.user.name)
                   .map((order) => (
