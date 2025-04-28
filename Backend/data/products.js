@@ -36,7 +36,7 @@ const products = [
     sku: "SLIM-SH-002",
     category: "Top Wear",
     sizes: ["S", "M", "L", "XL"],
-    colors: ["Navy Blue", "Burgundy", "White"],
+    colors: ["Blue", "Gray", "White"],
     collections: "Formal Wear",
     material: "Cotton Blend",
     gender: "Men",

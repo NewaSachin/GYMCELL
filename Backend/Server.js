@@ -20,7 +20,7 @@ app.use(cors());
 
 dotenv.config();
 
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 //Connect to MongoDB
 connectDb();
@@ -46,9 +46,9 @@ app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 
-// app.listen(PORT, () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 // if (process.env.NODE_ENV !== "production") {
 //   const PORT = process.env.PORT || 3000;
