@@ -49,7 +49,7 @@ const OrderDetailsPage = () => {
                     : "bg-yellow-200 text-yellow-700"
                 } px-3 py-1 rounded-full text-sm font-medium mb-2`}
               >
-                {orderDetails.isDelivered ? "Delivered" : "Pending Delivery"}
+                {orderDetails.isDelivered ? "Approved" : "Pending Delivery"}
               </span>
             </div>
           </div>
